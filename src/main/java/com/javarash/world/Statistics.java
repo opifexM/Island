@@ -210,10 +210,7 @@ public class Statistics {
                                         }))
                         .append(maxFamilyIdSettingsAtomicEntry.get().getKey().getSymbol());
             } else {
-                // ASCII symbols for Map
                 stringBuilder.append(color.selectColor(tile.getColorCode())).append(tile.getSymbol());
-                // Unicode symbols for Map
-                //stringBuilder.append(globalSettings.getMapPicture().get(tile.getMapLegend()));
             }
         }
     }

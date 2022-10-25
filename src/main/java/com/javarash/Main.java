@@ -8,14 +8,13 @@ import com.javarash.world.Statistics;
 import com.javarash.world.World;
 
 import java.io.IOException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class Main {
     public static final String SETTINGS_FILE = "GlobalSettings.yaml";
     public static final String ISLAND_LOG_FILE = "Island.log";
     public static final String DATA_FORMAT = "HH:mm:ss";
     public static final int LOWER_NUMBER_OF_ANIMALS = 1;
+    public static final int PAUSE_MILLIS = 1000;
 
 
     public static void main(String[] args) throws IOException {
@@ -42,7 +41,8 @@ public class Main {
                 break;
             }
             try {
-                Thread.sleep(1000);
+                //noinspection BusyWait
+                Thread.sleep(PAUSE_MILLIS);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

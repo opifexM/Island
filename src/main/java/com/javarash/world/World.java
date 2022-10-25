@@ -122,6 +122,7 @@ public class World {
         }
     }
 
+    @SuppressWarnings("SameParameterValue")
     private int generateMultiMapTitle(int index, int numbers, MapLegend mapLegend) {
         for (int i = 0; i < numbers; i++) {
             index = createSaveTitleMap(index, mapLegend);

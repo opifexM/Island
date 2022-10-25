@@ -47,6 +47,7 @@ public class GlobalSettings {
     private final Map<Integer, String> map = new TreeMap<>();
     private final EnumMap<MapLegend, ColorCode> mapColor = new EnumMap<>(MapLegend.class);
     private final EnumMap<MapLegend, String> mapLegend = new EnumMap<>(MapLegend.class);
+    @SuppressWarnings("MismatchedQueryAndUpdateOfCollection")
     private final EnumMap<MapLegend, String> mapPicture = new EnumMap<>(MapLegend.class);
     private final EnumMap<LineCode, String> statisticLine = new EnumMap<>(LineCode.class);
     private final Map<String, MapLegend> mapLegendRevers = new HashMap<>();
@@ -559,6 +560,7 @@ public class GlobalSettings {
         return reproductionChance;
     }
 
+    @SuppressWarnings("unused")
     public Map<Integer, HashMap<String, String>> getSettings() {
         return settings;
     }
