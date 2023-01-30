@@ -1,4 +1,5 @@
 
+[![Java CI](https://github.com/opifexM/Island/actions/workflows/main.yml/badge.svg)](https://github.com/opifexM/Island/actions/workflows/main.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/579a746a0453e26b0864/maintainability)](https://codeclimate.com/github/opifexM/Island/maintainability)
 
 ## Animal Life Simulation Island
